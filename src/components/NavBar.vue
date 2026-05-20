@@ -9,16 +9,16 @@
       </a>
 
       <!-- Hamburger (mobile only) -->
-      <div class="md:hidden z-30">
+      <div class="md:hidden">
         <button
           type="button"
           class="p-2 rounded-lg bg-blue-500/10 hover:bg-blue-500/20 transition-all duration-300"
           @click="isMenuOpen = !isMenuOpen"
         >
           <div class="relative w-6 h-5 cursor-pointer">
-            <span :class="['absolute left-0 w-6 h-0.5 bg-blue-500 dark:bg-blue-200 transition-all duration-300', isMenuOpen ? 'rotate-45 top-2.5' : 'top-0']"></span>
-            <span :class="['absolute left-0 w-6 h-0.5 bg-blue-500 dark:bg-blue-200 transition-all duration-300', isMenuOpen ? 'opacity-0' : 'top-2']"></span>
-            <span :class="['absolute left-0 w-6 h-0.5 bg-blue-500 dark:bg-blue-200 transition-all duration-300', isMenuOpen ? '-rotate-45 top-2.5' : 'top-4']"></span>
+            <span :class="['absolute left-0 w-6 h-0.5 bg-blue-500 dark:bg-blue-400 transition-all duration-300', isMenuOpen ? 'rotate-45 top-2.5' : 'top-0']"></span>
+            <span :class="['absolute left-0 w-6 h-0.5 bg-blue-500 dark:bg-blue-400 transition-all duration-300', isMenuOpen ? 'opacity-0' : 'top-2']"></span>
+            <span :class="['absolute left-0 w-6 h-0.5 bg-blue-500 dark:bg-blue-400 transition-all duration-300', isMenuOpen ? '-rotate-45 top-2.5' : 'top-4']"></span>
           </div>
         </button>
       </div>
@@ -51,37 +51,40 @@
         </a>
       </nav>
 
-      <!-- Mobile Menu Overlay -->
-      <div v-if="isMenuOpen"
-        class="fixed inset-0 z-20 flex flex-col items-center justify-center bg-white dark:bg-gray-950 md:hidden">
-        <nav class="flex flex-col items-center gap-8">
-          <a v-for="item in menu" :key="item.name"
-            :href="item.href"
-            @click.prevent="scrollToSection(item.href)"
-            class="text-2xl text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200 font-medium">
-            {{ item.name }}
-          </a>
+    </div>
 
-          <!-- Mobile theme toggle -->
-          <button @click="toggleTheme"
-            class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200 font-medium text-lg">
-            <svg v-if="isDark" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-            </svg>
-            <svg v-else class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-            </svg>
-            {{ isDark ? 'Light Mode' : 'Dark Mode' }}
-          </button>
+    <!-- Mobile Dropdown Menu -->
+    <div v-if="isMenuOpen"
+      class="md:hidden bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800 shadow-lg">
+      <nav class="flex flex-col px-6 py-4 gap-1">
+        <a v-for="item in menu" :key="item.name"
+          :href="item.href"
+          @click.prevent="scrollToSection(item.href)"
+          class="py-3 px-4 text-base font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all duration-200">
+          {{ item.name }}
+        </a>
 
+        <!-- Mobile theme toggle -->
+        <button @click="toggleTheme"
+          class="flex items-center gap-3 py-3 px-4 text-base font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all duration-200 w-full text-left">
+          <svg v-if="isDark" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+          </svg>
+          <svg v-else class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+          {{ isDark ? 'Light Mode' : 'Dark Mode' }}
+        </button>
+
+        <div class="pt-2 pb-1">
           <a href="mailto:athulkv.dev@gmail.com"
-            class="mt-4 px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-full">
+            class="block text-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-full">
             Hire Me
           </a>
-        </nav>
-      </div>
-
+        </div>
+      </nav>
     </div>
+
   </header>
 </template>
 
