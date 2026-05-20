@@ -1,5 +1,5 @@
 <template>
-  <header class="animate-slide-down fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200/80 dark:border-gray-800/50 transition-colors duration-300">
+  <header class="animate-slide-down fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center h-16">
 
       <!-- Logo -->
@@ -53,7 +53,7 @@
 
       <!-- Mobile Menu Overlay -->
       <div v-if="isMenuOpen"
-        class="fixed inset-0 z-20 flex flex-col items-center justify-center bg-white/98 dark:bg-gray-950/98 backdrop-blur-sm md:hidden">
+        class="fixed inset-0 z-20 flex flex-col items-center justify-center bg-white dark:bg-gray-950 md:hidden">
         <nav class="flex flex-col items-center gap-8">
           <a v-for="item in menu" :key="item.name"
             :href="item.href"
