@@ -17,7 +17,7 @@
         <div class="space-y-10">
           <div v-for="(job, idx) in experience" :key="job.company" class="relative flex gap-8 sm:gap-12" data-aos="fade-up" :data-aos-delay="idx * 100">
 
-            <!-- Timeline dot & line -->
+            <!-- Timeline dot & line. -->
             <div class="flex flex-col items-center flex-shrink-0">
               <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl border-2 flex items-center justify-center z-10 relative flex-shrink-0 transition-colors"
                 :class="idx === 0 ? 'border-blue-400 bg-blue-500/10' : 'border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-800/50'">
