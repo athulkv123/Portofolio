@@ -30,9 +30,9 @@
 
           <!-- Title tags (each pops in) -->
           <div class="flex flex-wrap gap-2">
-            <span class="animate-badge-pop animation-delay-300 px-3 py-1.5 bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 text-blue-600 dark:text-blue-300 text-sm font-medium rounded-lg">Senior Laravel Developer</span>
-            <span class="animate-badge-pop animation-delay-400 px-3 py-1.5 bg-cyan-50 dark:bg-cyan-500/10 border border-cyan-200 dark:border-cyan-500/20 text-cyan-600 dark:text-cyan-300 text-sm font-medium rounded-lg">Full-Stack Engineer</span>
-            <span class="animate-badge-pop animation-delay-500 px-3 py-1.5 bg-purple-50 dark:bg-purple-500/10 border border-purple-200 dark:border-purple-500/20 text-purple-600 dark:text-purple-300 text-sm font-medium rounded-lg">PHP & JS Specialist</span>
+            <span class="animate-badge-pop animation-delay-300 px-3 py-1.5 bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 text-blue-600 dark:text-blue-300 text-sm font-medium rounded-lg">Senior Backend Engineer</span>
+            <span class="animate-badge-pop animation-delay-400 px-3 py-1.5 bg-cyan-50 dark:bg-cyan-500/10 border border-cyan-200 dark:border-cyan-500/20 text-cyan-600 dark:text-cyan-300 text-sm font-medium rounded-lg">Node.js & Laravel</span>
+            <span class="animate-badge-pop animation-delay-500 px-3 py-1.5 bg-purple-50 dark:bg-purple-500/10 border border-purple-200 dark:border-purple-500/20 text-purple-600 dark:text-purple-300 text-sm font-medium rounded-lg">Full-Stack JS & PHP</span>
           </div>
 
           <!-- Description -->
@@ -102,7 +102,7 @@
             <div class="animate-float-alt absolute -top-4 -right-4 bg-white dark:bg-gray-900/95 border border-gray-200 dark:border-gray-700 rounded-2xl px-4 py-3 shadow-lg dark:shadow-2xl">
               <div class="flex items-center gap-2">
                 <div class="w-3 h-3 rounded-full bg-red-500 flex-shrink-0"></div>
-                <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Laravel · Vue.js · PHP</span>
+                <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Node.js · Laravel · Vue.js</span>
               </div>
             </div>
           </div>

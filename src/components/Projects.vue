@@ -62,8 +62,8 @@ const projects = [
     iconBg: 'bg-blue-500/10',
     iconBorder: 'border-blue-500/20',
     iconColor: 'text-blue-400',
-    description: 'Laravel platform with payroll, attendance, and leave modules for 1,000+ employees. 20+ REST APIs, live Pusher notifications, and exportable reporting dashboards; query tuning cut page load by 30%.',
-    tech: ['Laravel', 'Vue.js', 'MySQL', 'Redis', 'Pusher', 'REST APIs'],
+    description: 'Laravel + Node.js HR SaaS with payroll, attendance, and leave modules for 1,000+ employees. 20+ REST APIs, live Socket.IO/Pusher notifications, and exportable reporting dashboards; query tuning cut page load by 30%.',
+    tech: ['Laravel', 'Node.js', 'Vue.js', 'MySQL', 'Redis', 'Socket.IO', 'Pusher'],
   },
   {
     name: 'CRYO — Multi-Tenant SaaS',
@@ -72,8 +72,8 @@ const projects = [
     iconBg: 'bg-purple-500/10',
     iconBorder: 'border-purple-500/20',
     iconColor: 'text-purple-400',
-    description: 'Multi-tenant architecture supporting isolated client environments with 40+ REST APIs, Stripe subscription billing, DomPDF invoicing, and Redis-backed queue workers for asynchronous notifications.',
-    tech: ['Laravel', 'Multi-Tenant', 'Stripe', 'Redis', 'DomPDF', 'Queue Workers'],
+    description: 'Multi-tenant architecture supporting isolated client environments with 40+ REST APIs, Stripe subscription billing, DomPDF/PDFKit invoicing, and Redis-backed queue workers (Laravel Queues + BullMQ) for async notifications.',
+    tech: ['Laravel', 'Node.js', 'Multi-Tenant', 'Stripe', 'Redis', 'BullMQ', 'Laravel Queues'],
   },
   {
     name: 'EcoHome API — Service Marketplace',
@@ -82,8 +82,8 @@ const projects = [
     iconBg: 'bg-green-500/10',
     iconBorder: 'border-green-500/20',
     iconColor: 'text-green-400',
-    description: 'Stateless RESTful backend with Sanctum authentication, RBAC, Pusher-powered chat, Firebase push alerts, and AWS S3 storage. Load-tested to sub-150ms median response time.',
-    tech: ['Laravel', 'Sanctum', 'RBAC', 'Pusher', 'Firebase', 'AWS S3'],
+    description: 'Stateless RESTful backend (Express.js + Laravel Sanctum hybrid) with JWT auth, RBAC, Socket.IO/Pusher chat, Firebase push alerts, and AWS S3 storage. Load-tested to sub-150ms median response time.',
+    tech: ['Express.js', 'Laravel', 'JWT', 'RBAC', 'Socket.IO', 'Firebase', 'AWS S3'],
   },
   {
     name: 'RVPNL — Power Grid Dashboard',
@@ -112,8 +112,8 @@ const projects = [
     iconBg: 'bg-yellow-500/10',
     iconBorder: 'border-yellow-500/20',
     iconColor: 'text-yellow-400',
-    description: 'High-concurrency MLM system with a visual genealogy tree, tiered commission engine, e-wallet ledger, and Laravel Queue workers managing payouts for 10,000+ members.',
-    tech: ['Laravel', 'Queue Workers', 'MySQL', 'Vue.js', 'E-Wallet'],
+    description: 'High-concurrency MLM system with a visual genealogy tree, tiered commission engine, e-wallet ledger, and Laravel Queue/BullMQ workers managing payouts for 10,000+ members.',
+    tech: ['Laravel', 'Node.js', 'BullMQ', 'MySQL', 'Vue.js', 'E-Wallet'],
   },
   {
     name: 'Oushadhi — E-commerce Store',
@@ -122,8 +122,8 @@ const projects = [
     iconBg: 'bg-teal-500/10',
     iconBorder: 'border-teal-500/20',
     iconColor: 'text-teal-400',
-    description: 'Full-stack storefront (Laravel + Vue.js) with OTP authentication, Razorpay checkout, multilingual content (English/Malayalam), and Redis page caching.',
-    tech: ['Laravel', 'Vue.js', 'Razorpay', 'Redis', 'Multilingual'],
+    description: 'Full-stack storefront (Laravel + Vue.js, with Node.js microservices) with OTP auth, Razorpay checkout, multilingual content (English/Malayalam), and Redis page caching.',
+    tech: ['Laravel', 'Node.js', 'Vue.js', 'Razorpay', 'Redis', 'Multilingual'],
   },
   {
     name: 'Campus Abroad — Student Portal',
@@ -132,8 +132,8 @@ const projects = [
     iconBg: 'bg-indigo-500/10',
     iconBorder: 'border-indigo-500/20',
     iconColor: 'text-indigo-400',
-    description: 'Study-abroad management system: JWT-secured Laravel API consumed by a React SPA, including registration, loan tracking, and application-status workflows with RBAC.',
-    tech: ['Laravel', 'React', 'JWT', 'RBAC', 'REST APIs'],
+    description: 'Study-abroad management system: JWT-secured Laravel/Express.js API consumed by a React SPA, including registration, loan tracking, and application-status workflows with RBAC.',
+    tech: ['Laravel', 'Express.js', 'React', 'JWT', 'RBAC', 'REST APIs'],
   },
 ]
 </script>

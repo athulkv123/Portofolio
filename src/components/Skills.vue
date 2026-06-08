@@ -48,7 +48,7 @@ const skillCategories = [
     iconBorder: 'border-blue-500/20',
     badgeClass: 'bg-blue-50 text-blue-600 border-blue-200 hover:bg-blue-100 dark:bg-blue-500/10 dark:text-blue-300 dark:border-blue-500/20 dark:hover:bg-blue-500/20',
     icon: '<svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>',
-    skills: ['PHP 8.x', 'JavaScript (ES6+)', 'SQL', 'HTML5', 'CSS3', 'Bash'],
+    skills: ['JavaScript (ES6+)', 'TypeScript', 'PHP 8.x', 'SQL', 'HTML5', 'CSS3', 'Bash'],
   },
   {
     name: 'Frameworks & Libraries',
@@ -57,7 +57,7 @@ const skillCategories = [
     iconBorder: 'border-purple-500/20',
     badgeClass: 'bg-purple-50 text-purple-600 border-purple-200 hover:bg-purple-100 dark:bg-purple-500/10 dark:text-purple-300 dark:border-purple-500/20 dark:hover:bg-purple-500/20',
     icon: '<svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>',
-    skills: ['Laravel', 'CodeIgniter', 'Vue.js 3', 'React.js', 'Livewire', 'Inertia.js', 'Bootstrap 5', 'Tailwind CSS', 'jQuery'],
+    skills: ['Node.js', 'Express.js', 'NestJS', 'Fastify', 'Socket.IO', 'Laravel', 'CodeIgniter', 'Vue.js 3', 'React.js', 'Next.js', 'Livewire', 'Inertia.js', 'Tailwind CSS', 'Bootstrap 5'],
   },
   {
     name: 'Databases & Caching',
@@ -66,7 +66,7 @@ const skillCategories = [
     iconBorder: 'border-green-500/20',
     badgeClass: 'bg-green-50 text-green-600 border-green-200 hover:bg-green-100 dark:bg-green-500/10 dark:text-green-300 dark:border-green-500/20 dark:hover:bg-green-500/20',
     icon: '<svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg>',
-    skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'SQLite', 'Redis'],
+    skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis', 'SQLite', 'Prisma', 'Sequelize', 'Mongoose', 'Eloquent'],
   },
   {
     name: 'APIs & Authentication',
@@ -75,7 +75,7 @@ const skillCategories = [
     iconBorder: 'border-yellow-500/20',
     badgeClass: 'bg-yellow-50 text-yellow-600 border-yellow-200 hover:bg-yellow-100 dark:bg-yellow-500/10 dark:text-yellow-300 dark:border-yellow-500/20 dark:hover:bg-yellow-500/20',
     icon: '<svg class="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>',
-    skills: ['REST APIs', 'OAuth 2.0', 'JWT', 'Laravel Sanctum', 'Laravel Passport', 'Webhook Integration'],
+    skills: ['REST APIs', 'GraphQL', 'OAuth 2.0', 'JWT', 'Passport.js', 'Laravel Sanctum', 'Laravel Passport', 'bcrypt', 'Webhook Integration'],
   },
   {
     name: 'DevOps & Cloud',
@@ -84,7 +84,7 @@ const skillCategories = [
     iconBorder: 'border-cyan-500/20',
     badgeClass: 'bg-cyan-50 text-cyan-600 border-cyan-200 hover:bg-cyan-100 dark:bg-cyan-500/10 dark:text-cyan-300 dark:border-cyan-500/20 dark:hover:bg-cyan-500/20',
     icon: '<svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>',
-    skills: ['Git', 'GitHub', 'Docker', 'Linux', 'AWS S3', 'Firebase', 'Pusher', 'Sentry', 'Composer', 'NPM'],
+    skills: ['Git', 'GitHub', 'Docker', 'Linux', 'PM2', 'Nginx', 'AWS S3', 'AWS EC2', 'Firebase', 'Pusher', 'Sentry', 'Composer', 'NPM'],
   },
   {
     name: 'Architecture & Process',
@@ -93,7 +93,7 @@ const skillCategories = [
     iconBorder: 'border-rose-500/20',
     badgeClass: 'bg-rose-50 text-rose-600 border-rose-200 hover:bg-rose-100 dark:bg-rose-500/10 dark:text-rose-300 dark:border-rose-500/20 dark:hover:bg-rose-500/20',
     icon: '<svg class="w-5 h-5 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>',
-    skills: ['OOP', 'SOLID Principles', 'MVC', 'Repository Pattern', 'Service Layer', 'Observer Pattern', 'Multi-Tenant', 'Queue Workers', 'WebSockets', 'Microservices', 'PHPUnit', 'TDD', 'Agile', 'Scrum', 'CI/CD'],
+    skills: ['OOP', 'SOLID Principles', 'MVC', 'Repository Pattern', 'Service Layer', 'Observer Pattern', 'Factory Pattern', 'Multi-Tenant', 'BullMQ', 'RabbitMQ', 'Laravel Queues', 'WebSockets', 'Microservices', 'Event-Driven', 'Jest', 'PHPUnit', 'TDD', 'Agile', 'Scrum', 'CI/CD'],
   },
 ]
 </script>

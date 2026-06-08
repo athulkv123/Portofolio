@@ -17,12 +17,12 @@
             Senior Software Engineer with over
             <span class="text-blue-500 dark:text-blue-400 font-semibold">6 years of experience</span>
             building robust, scalable web applications with
-            <span class="text-blue-500 dark:text-blue-400 font-semibold">Laravel, PHP 8, Vue.js, and React</span>.
+            <span class="text-blue-500 dark:text-blue-400 font-semibold">Node.js/Express.js, Laravel, Vue.js, and React</span>.
           </p>
           <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-            Skilled in object-oriented programming, SOLID principles, multi-tenant SaaS, RESTful API design,
-            Redis caching, and relational database optimization. Strong background in guiding engineering teams,
-            setting code-quality standards, and shipping production-ready features on schedule within Agile workflows.
+            Skilled in OOP, SOLID principles, multi-tenant SaaS, REST and GraphQL API design, Redis caching,
+            event-driven architecture, and SQL/NoSQL database optimization. Strong background in guiding engineering
+            teams, setting code-quality standards, and shipping production-ready features on schedule within Agile workflows.
           </p>
           <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
             Recognized twice for outstanding performance across two organizations — as
